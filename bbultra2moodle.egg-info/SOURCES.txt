@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bbultra2moodle/__init__.py
+bbultra2moodle/bbconverter.py
+bbultra2moodle/main.py
+bbultra2moodle/moodle.xml.template
+bbultra2moodle/test.py
+bbultra2moodle/utils.py
+bbultra2moodle.egg-info/PKG-INFO
+bbultra2moodle.egg-info/SOURCES.txt
+bbultra2moodle.egg-info/dependency_links.txt
+bbultra2moodle.egg-info/entry_points.txt
+bbultra2moodle.egg-info/not-zip-safe
+bbultra2moodle.egg-info/requires.txt
+bbultra2moodle.egg-info/top_level.txt

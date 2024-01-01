@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: bbultra2moodle
+Version: 1.0.0
+Summary: Blackboard ultra course to Moodle
+Home-page: 
+Author: 
+Author-email: 
+License: GPL v3
+Description: Blackboard ultra course to Moodle
+Keywords: blackboard,moodle,convert,lms
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
