@@ -39,7 +39,9 @@ class Announcement(Resource):
         self.alltext = self.xml.find(".//TEXT").text
         self.res_type = "html"
         self.reference = "2"  # TODO
-        av = self.xml.find(".//FLAGS/ISAVAILABLE").get("value")
+        av = "false"
+        if self.xml.find(".//FLAGS/ISAVAILABLE") is not None :
+            av = self.xml.find(".//FLAGS/ISAVAILABLE").get("value")
         if av == "false":
             self.visible = 0
         else:

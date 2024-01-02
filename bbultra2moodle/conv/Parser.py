@@ -79,6 +79,15 @@ class Parser(object):
         utils.logme("CR : Converting Resource ")
         for resource in self.manifest.iterfind(".//resource"):
             dat_name = resource.get("file")
+            res_type = resource.get("type")
+            ignored = (
+            "assessment/x-bb-qti-attempt",
+            "course/x-bb-trackingevent"
+            )
+      
+            if res_type in ignored :
+                utils.logerror("CR : IGNORED not implemented " + res_type + " | " + dat_name)
+                continue
             try:
                 xml = etree.parse(self.zip.open(dat_name))
             except KeyError:
@@ -86,7 +95,7 @@ class Parser(object):
                 continue
 
             res_num = dat_name.replace(".dat", "")
-            res_type = resource.get("type")
+            
             utils.logme("CR : res_num " + res_num + " | type " + res_type)
 
             if res_type == "course/x-bb-coursesetting":

@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "/var/www/html/bbultra_2_moodle/bbultra2moodle/test.py",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": false
         }
     ]
 }
